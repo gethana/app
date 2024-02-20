@@ -1,0 +1,60 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 6rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  border: 1px solid #494949;
+  border-radius: 1rem;
+  box-shadow: 0 0 0.5rem 0.15rem #2e2e2e;
+}
+
+a {
+  color: inherit;
+  text-underline-offset: 0.2rem;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+img:hover {
+  transform: scale(1.1);
+  border: 1px solid #bbbbbb;
+  border-radius: 1rem;
+  background-color: black;
+  box-shadow: 0 0 1rem 0.15rem #4e4e4e;
+}
+
+body {
+  height: 100dvh;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #929292;
+  text-justify: inter-ideograph;
+}
+
+p {
+  max-width: 15rem;
+}
