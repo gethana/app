@@ -1,17 +1,19 @@
-import Hana from './assets/hana_logo.png'
+import { Route, Switch } from "wouter";
+import Login from "./pages/Login";
+import Home from "./pages/Home";
+import Error404 from "./pages/Error404";
 
 function App() {
-
   return (
     <>
-    <a href="https://github.com/gethana/app">
-      <img src={Hana} alt="Hana logo" />
-    </a>
-      <p>
-        Download the Hana app from the <a href="https://github.com/gethana/app" target="_blank" rel="noreferrer">GitHub repository</a>.
-      </p>
+      <Switch>
+        <Route path="/" component={Home} />
+        <Route path="/login" component={Login} />
+        <Route component={Error404}></Route>
+      </Switch>
+
     </>
-  )
+  );
 }
 
-export default App
+export default App;
